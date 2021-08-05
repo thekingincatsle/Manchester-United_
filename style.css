@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+   
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+     
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 30px;
+    
+}
+
+/*main-content*/
+.main-content{
+    
+    position: relative;
+    color: rgb(228, 213, 213);
+    height: 650px;
+    margin: 0em;   
+}
+/*layout*/
+.header{
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    position: fixed;
+    background-color:#97212D ;
+    padding: 1em 2em;
+    width: 96%;
+    z-index: 100;
+    top: 0;
+}
+.option{
+    float: right;
+}
+/*control bar*/
+.control{
+    display: flex;
+    
+}
+    /*nav-bar*/
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    
+}
+.nav-bar .nav-items{
+    padding-left: 1em;
+    
+}
+    /*option bar*/
+.option{
+    
+    display: flex;
+    align-items: center;
+}
+.sign{
+    margin-left: 1.5em;
+    display: flex;
+}
+.sign-items{
+    padding: 0 1em;
+}
+.sign-items+ .sign-items{
+    
+    border-left: solid 1px;
+}
+/*Header effect*/
+.nav-items,.sign-items{
+    text-decoration: none;
+}
+.nav-items::after,.sign-items::after{
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: salmon;
+    margin-top: 2px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.nav-items:hover::after,.sign-items:hover::after{
+     transform: scale(1);
+}
+/*language selection*/
+select{
+    background: none;
+    border: none;
+    color: inherit;
+}
+select:hover{
+    cursor: pointer;
+}
+option{
+    font-weight: bold;
+}
+/*reference element*/
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: -50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.sponsor div img{
+    width: 100px;
+    margin: 0 1em;
+    opacity: 0.5;
+}
+.sponsor{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+}
+/*main content*/
+
+.player{
+    min-width: 450px;
+    min-height: 400px;
+    opacity: 0.5;
+    z-index: -1;
+}
